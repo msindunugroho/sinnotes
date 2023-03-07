@@ -1,0 +1,131 @@
+$warnaPertama:#4a2a7e;
+$warnaKedua:#9a7cc5;
+$warnaKetiga:#9ac1ea;
+$warnaText:black;
+
+
+nav {
+  width: 360px;
+  height: max-content;
+  position: fixed;
+  right: -185px;
+  color: white;
+  // right: 30px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  z-index: 100; 
+
+  .top-nav {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: flex-start;
+    .menu-icon {
+      margin-bottom: 30px;
+      width: max-content;
+      height: max-content;
+      cursor: default;
+  
+      span {
+        font-size: 35px;
+      }
+    }
+    .theme-switcher {
+      width: max-content;
+      height: 40px;
+      margin-left: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container-switcher {
+        width: 40px;
+        height: max-content;
+        border-radius: 20px;
+        padding: 1px;
+        border: 1px solid white;
+
+        .switcher {
+          width: 18px;
+          height: 18px;
+          border-radius: 20px;
+          background-color: white;
+          margin-left: 0px;
+          transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+      }
+      .container-icon-theme {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+
+        span {
+          font-size: 35px;
+          font-weight: 500;
+          color: orange;
+        }
+      }
+    }
+  }
+
+
+  .nav-bar {
+    width: 100%;
+    height: max-content;
+
+
+    .nav-link {
+      background-color: rgb(32, 32, 32);
+      width: 50%;
+      margin-bottom: 5px;
+      border-radius: 5px 0 0 5px;
+      overflow: hidden;
+
+      &.first {
+        transition: .3s cubic-bezier(0.2, 0.99, 0.58, 0.98);
+        margin-left: 175px;
+        margin-left: 175px;
+      }
+      &.second {
+        transition: .3s cubic-bezier(0.2, 0.99, 0.58, 0.98) .1s;
+        margin-left: 175px;
+      }
+      &.third {
+        transition: .3s cubic-bezier(0.2, 0.99, 0.58, 0.98) .2s;
+        margin-left: 175px;
+      }
+      &.fourth {
+        transition: .3s cubic-bezier(0.2, 0.99, 0.58, 0.98) .3s;
+        margin-left: 175px;
+      }
+      &.fifth {
+        transition: .3s cubic-bezier(0.2, 0.99, 0.58, 0.98) .4s;
+        margin-left: 175px;
+      }
+
+      &:hover {
+        a {
+          background-color: $warnaKetiga;
+          color: #4a2a7e;
+        }
+      }
+
+      a {
+        background-color: rgb(32, 32, 32);
+        display:inline-block;
+        width: 100%;
+        padding: 15px 25px;
+        text-decoration: none;
+        background-color:$warnaPertama;
+        color: white;
+      }
+    }
+  }
+}

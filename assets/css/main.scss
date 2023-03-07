@@ -1,0 +1,18 @@
+@use 'modules/nav';
+@use 'modules/alert';
+@use 'modules/hero';
+@use 'modules/learning';
+@use 'modules/footer';
+
+$warnaPertama:#4a2a7e;
+$warnaKedua:#9a7cc5;
+$warnaKetiga:#9ac1ea;
+$warnaText:black;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #190f2b;
+    font-family: 'Montserrat', sans-serif;
+}
+

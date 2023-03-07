@@ -1,0 +1,115 @@
+section#learning {
+  width: 100%;
+  height: max-content;
+  padding: 100px 0;
+  position: relative;
+
+  .shadow {
+    z-index: 1;
+    position: absolute;
+    border-radius: 100%;
+    box-shadow: 0 0 200px 200px #281944;
+    &:first-child {
+      top: -150px;
+      left: 500px;
+    }
+    &:nth-child(2) {
+      right: 0;
+      top: 500px;
+    }
+    &:nth-child(3) {
+      bottom: 400px;
+      left: 0;
+
+    }
+  }
+
+
+  .container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      width: 100%;
+      height: max-content;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      padding: 50px 0;
+
+      p:first-child {
+        font-size: 40px;
+        margin: 0;
+      }
+
+      p:last-child {
+        text-transform: capitalize;
+      }
+    }
+
+    .card-container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+      .card {
+        width: 330px;
+        z-index: 2;
+        height: max-content;
+        padding: 25px 15px;
+        background-color: #1e1133 ;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: "Tilt Neon", cursive;
+        margin-bottom: 40px;
+        position: relative;
+  
+        .top-card {
+          width: 100%;
+          height: max-content;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+  
+          img {
+            height: 45px;
+            margin-right: 10px;
+          }
+  
+          p {
+            margin-left: 15px;
+            color: white;
+            font-size: 20px;
+          }
+  
+          .coming-soon {
+            color: yellow;
+            font-size: 14px;
+            font-style: italic;
+          }
+
+          .in-progress {
+            color: rgb(0, 255, 42);
+            font-size: 14px;
+            font-style: italic;
+          }
+        }
+  
+        .bottom-card {
+          margin-top: 10px;
+          font-size: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}

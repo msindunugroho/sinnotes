@@ -1,0 +1,65 @@
+$warnaPertama: #4a2a7e;
+$warnaKedua: #9a7cc5;
+$warnaKetiga: #9ac1ea;
+$warnaText: black;
+
+section#hero {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.952), #280f50c9);
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: aqua;
+    position: relative;
+
+    .hero-img {
+      width: 100%;
+      height: max-content;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .hero-desc {
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: 0px;
+      width: 90%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 10px;
+
+      p {
+        font-size: 40px;
+        color: white;
+        margin: 0;
+        font-weight: 700;
+        text-transform: capitalize;
+
+      }
+    }
+  }
+}
