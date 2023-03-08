@@ -75,7 +75,6 @@ nav .nav-bar {
   height: max-content;
 }
 nav .nav-bar .nav-link {
-  background-color: rgb(32, 32, 32);
   width: 50%;
   margin-bottom: 5px;
   border-radius: 5px 0 0 5px;
@@ -103,16 +102,15 @@ nav .nav-bar .nav-link.fifth {
   margin-left: 175px;
 }
 nav .nav-bar .nav-link:hover a {
-  background-color: #9ac1ea;
-  color: #4a2a7e;
+  background-color: white;
+  color: #7827e6;
 }
 nav .nav-bar .nav-link a {
-  background-color: rgb(32, 32, 32);
   display: inline-block;
   width: 100%;
   padding: 15px 25px;
   text-decoration: none;
-  background-color: #4a2a7e;
+  background-color: #7827e6;
   color: white;
 }
 
@@ -130,7 +128,7 @@ section#alert {
   border-radius: 5px;
   background-color: rgba(100, 100, 66, 0.808);
   border: 1px solid yellow;
-  z-index: 5;
+  z-index: 101;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -245,22 +243,81 @@ section#learning .container {
   display: flex;
   flex-direction: column;
 }
+section#learning .container .intro {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section#learning .container .intro .card {
+  width: 950px;
+  height: 300px;
+  background-image: linear-gradient(to top right, #7827e6, #9a27e6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+  border-radius: 30px;
+  z-index: 2;
+}
+section#learning .container .intro .card .desc {
+  width: 48%;
+  height: 100%;
+  color: white;
+}
+section#learning .container .intro .card .desc p:first-child {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+section#learning .container .intro .card .desc p:nth-child(2) {
+  line-height: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 19px;
+  margin-bottom: 25px;
+  letter-spacing: 1.3px;
+}
+section#learning .container .intro .card .desc a {
+  background-color: #281944;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+section#learning .container .intro .card .card-img {
+  width: 48%;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  border-radius: 30px;
+}
+section#learning .container .intro .card .card-img img {
+  width: 100%;
+}
 section#learning .container .title {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
   text-align: center;
-  color: white;
+  color: #7827e6;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   padding: 50px 0;
 }
 section#learning .container .title p:first-child {
   font-size: 40px;
+  font-weight: 700;
   margin: 0;
 }
 section#learning .container .title p:last-child {
   text-transform: capitalize;
+  color: white;
 }
 section#learning .container .card-container {
   width: 100%;
@@ -336,7 +393,7 @@ section#footer .container .brand {
   width: 100%;
   height: -moz-max-content;
   height: max-content;
-  color: white;
+  color: #7827e6;
   font-size: 50px;
 }
 section#footer .container .top-footer {
@@ -381,7 +438,7 @@ section#footer .container .bottom-footer .sosmed-container {
   display: flex;
   align-self: flex-end;
   margin: 50px 0;
-  border-top: 1px solid white;
+  border-top: 1px solid #7827e6;
 }
 section#footer .container .bottom-footer .sosmed-container a {
   text-decoration: none;
@@ -394,7 +451,7 @@ section#footer .container .bottom-footer .sosmed-container a img {
 section#footer .container .bottom-footer .developer {
   width: -moz-max-content;
   width: max-content;
-  color: #5b27ad;
+  color: #7827e6;
   margin-top: 30px;
   font-weight: 700;
 }

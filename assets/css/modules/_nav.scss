@@ -82,7 +82,6 @@ nav {
 
 
     .nav-link {
-      background-color: rgb(32, 32, 32);
       width: 50%;
       margin-bottom: 5px;
       border-radius: 5px 0 0 5px;
@@ -112,18 +111,17 @@ nav {
 
       &:hover {
         a {
-          background-color: $warnaKetiga;
-          color: #4a2a7e;
+          background-color:white;
+          color: #7827e6;
         }
       }
 
       a {
-        background-color: rgb(32, 32, 32);
         display:inline-block;
         width: 100%;
         padding: 15px 25px;
         text-decoration: none;
-        background-color:$warnaPertama;
+        background-color:#7827e6;
         color: white;
       }
     }
