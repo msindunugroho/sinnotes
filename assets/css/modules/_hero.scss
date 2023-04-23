@@ -63,3 +63,30 @@ section#hero {
     }
   }
 }
+
+  @media (max-width: 767.98px) {
+    section#hero {
+      height: 380px;
+      .container {
+        .hero-desc {
+          p {
+            font-size: 30px;
+          }
+
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    section#hero {
+      height: 200px;
+      .container {
+        .hero-desc {
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }

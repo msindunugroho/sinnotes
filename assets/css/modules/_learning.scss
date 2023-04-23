@@ -8,9 +8,9 @@ section#learning {
     z-index: 1;
     position: absolute;
     border-radius: 100%;
-    box-shadow: 0 0 200px 200px #281944;
+    box-shadow: 0 0 160px 200px #281944;
     &:first-child {
-      top: -150px;
+      top: -100px;
       left: 500px;
     }
     &:nth-child(2) {
@@ -136,7 +136,7 @@ section#learning {
         border-radius: 15px;
         text-decoration: none;
         font-family: "Tilt Neon", cursive;
-        margin-bottom: 40px;
+        margin: 0 5px 40px;
         position: relative;
   
         .top-card {
@@ -179,3 +179,89 @@ section#learning {
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  section#learning {
+    .container {
+      padding: 0 10px 0;
+      .intro {
+        .card {
+          width: 500px;
+          height: max-content;
+          padding: 25px;
+          flex-direction: column-reverse;
+
+          .desc {
+            width: 100%;
+            height: max-content;
+            margin-bottom: 15px;
+          }
+          .card-img {
+            width: 100%;
+            margin-bottom: 15px;
+
+          }
+          
+        }
+      }
+      .card-container {
+        .card {
+          width: 270px;
+          height: 210px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  section#learning {
+    .container {
+      .intro {
+        .card {
+          .desc {
+          p:first-child {
+            font-size: 30px;
+          }
+          p:nth-child(2) {
+            font-size: 18px;
+          }
+          a {
+            padding: 10px 15px;
+            font-size: 18px;
+          }
+           }
+          }       
+        }
+      .title {
+        p:first-child {
+          font-size: 30px;
+        }
+        p:last-child {
+          font-size: 18px;
+        }
+      }
+      .card-container {
+        .card {
+          height: max-content;
+          width: 210px;
+          padding: 10px;
+          margin: 10px 5px;
+          .top-card{
+            img {
+              height: 35px;
+              margin-right: 0;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+          .bottom-card{
+            display: none;
+          }
+        }
+      }
+      }
+    }
+  }
+

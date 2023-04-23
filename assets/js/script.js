@@ -33,8 +33,6 @@ let switcher = false;
     }
   });
 })();
-
-
 /**
  * Switcher Theme
  */
