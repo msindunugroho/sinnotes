@@ -1,0 +1,134 @@
+section#content {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  // main-content
+  .main-content {
+    width: 100%;
+    height: max-content;
+    margin-left: 200px;
+    padding: 100px 0;
+
+    .container {
+      width: 900px;
+      height: max-content;
+      margin: auto;
+
+
+      .title {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+
+      h1, h2, h3 {
+        text-transform: capitalize;
+        margin: 5px 0 0;
+      }
+
+      h1 {
+        font-size: 30px;
+        color:#7827e6;
+      }
+      h2 {
+        font-size: 24px;
+        color:#884bdd;
+      }
+      h3 {
+        font-size: 18px;
+        color:#9e76d6;
+      }
+  
+      p {
+        color: rgb(143, 143, 143);
+        letter-spacing: 1px;
+        line-height: 19px;
+        text-align: justify;
+      }
+
+      .red-text {
+        color: red;
+      }
+
+      .yellow-text {
+        color: yellow;
+      }
+      a {
+        color: rgb(50, 50, 235);
+      }
+
+      b {
+        background-color: rgba(0, 128, 0, 0.753);
+        padding: 0 3px;
+      }
+
+      ol, ul {
+        margin: 0;
+      }
+  
+      li {
+        color: white;
+
+        p {
+          margin: 3px 0 13px;
+        }
+      }
+
+      .img-intro {
+        width: 200px;
+        height: max-content;
+      }
+
+
+    }
+
+  }
+
+  // menu-slidedown
+  .menu-slidedown {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(36, 36, 36);
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      overflow: auto;
+
+      .module {
+        width: 100%;
+        height: max-content;
+        height: max-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 185px;
+
+        a {
+          width: 100%;
+          height: 100%;
+          padding: 10px 0;
+          text-decoration: none;
+          font-weight: 600;
+          text-align: center;
+          color: white;
+          background-color: #7827e6;
+
+          &:hover {
+            color: #7827e6;
+            background-color: whitesmoke;
+          }
+        }
+      }
+    }
+  }
+}
