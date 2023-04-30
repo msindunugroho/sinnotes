@@ -1,6 +1,6 @@
-
-@use './../../../assets/css/modules/nav';
+@use './module/nav-module';
 @use './module/menu-slidedown';
+@use './../../../assets/css/modules/footer';
 
 body {
     padding: 0;

@@ -1,0 +1,24 @@
+nav {
+    width: 30px;
+    height: 30px;    
+    position: fixed;
+    right: 30px;
+    top: 17px;
+    z-index: 10;
+
+    a {
+        display: inline-block;
+
+        svg {
+            width: 37px;
+            height: 37px;
+            fill: #7827e6;
+        }
+
+        &:hover {
+            svg {
+                fill: #884bdd;
+            }
+        }
+    }
+}

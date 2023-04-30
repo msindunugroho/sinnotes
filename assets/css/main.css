@@ -31,44 +31,6 @@ nav .top-nav .menu-icon {
 nav .top-nav .menu-icon span {
   font-size: 35px;
 }
-nav .top-nav .theme-switcher {
-  width: -moz-max-content;
-  width: max-content;
-  height: 40px;
-  margin-left: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav .top-nav .theme-switcher .container-switcher {
-  width: 40px;
-  height: -moz-max-content;
-  height: max-content;
-  border-radius: 20px;
-  padding: 1px;
-  border: 1px solid white;
-}
-nav .top-nav .theme-switcher .container-switcher .switcher {
-  width: 18px;
-  height: 18px;
-  border-radius: 20px;
-  background-color: white;
-  margin-left: 0px;
-  transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-nav .top-nav .theme-switcher .container-icon-theme {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 5px;
-}
-nav .top-nav .theme-switcher .container-icon-theme span {
-  font-size: 35px;
-  font-weight: 500;
-  color: orange;
-}
 nav .nav-bar {
   width: 100%;
   height: -moz-max-content;
@@ -79,6 +41,10 @@ nav .nav-bar .nav-link {
   margin-bottom: 5px;
   border-radius: 5px 0 0 5px;
   overflow: hidden;
+}
+nav .nav-bar .nav-link.home {
+  font-weight: 700;
+  font-size: 18px;
 }
 nav .nav-bar .nav-link.first {
   transition: 0.3s cubic-bezier(0.2, 0.99, 0.58, 0.98);
@@ -346,10 +312,8 @@ section#learning .container .card-container {
 }
 section#learning .container .card-container .card {
   width: 330px;
+  height: 165px;
   z-index: 2;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 25px 15px;
   background-color: #1e1133;
   display: flex;
   flex-direction: column;
@@ -357,39 +321,59 @@ section#learning .container .card-container .card {
   text-decoration: none;
   font-family: "Tilt Neon", cursive;
   margin: 0 5px 40px;
+  overflow: hidden;
   position: relative;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.8);
 }
-section#learning .container .card-container .card .top-card {
+section#learning .container .card-container .card:first-child {
+  background-image: url("../img/html-bg.png");
+}
+section#learning .container .card-container .card:nth-child(2) {
+  background-image: url("../img/css-bg.png");
+}
+section#learning .container .card-container .card:nth-child(3) {
+  background-image: url("../img/sass-bg.png");
+}
+section#learning .container .card-container .card:nth-child(4) {
+  background-image: url("../img/git-bg.png");
+}
+section#learning .container .card-container .card:nth-child(5) {
+  background-image: url("../img/github-bg.png");
+}
+section#learning .container .card-container .card:nth-child(6) {
+  background-image: url("../img/js-bg.png");
+}
+section#learning .container .card-container .card:nth-child(7) {
+  background-image: url("../img/webpack-bg.png");
+}
+section#learning .container .card-container .card .card-title {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: 100%;
+  padding: 26px 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
+  background-image: linear-gradient(to right, #1e1133, rgba(30, 17, 51, 0.431372549));
 }
-section#learning .container .card-container .card .top-card img {
+section#learning .container .card-container .card .card-title img {
   height: 45px;
   margin-right: 10px;
 }
-section#learning .container .card-container .card .top-card p {
+section#learning .container .card-container .card .card-title p {
   margin-left: 15px;
   color: white;
   font-size: 20px;
 }
-section#learning .container .card-container .card .top-card .coming-soon {
+section#learning .container .card-container .card .card-title .coming-soon {
   color: yellow;
   font-size: 14px;
   font-style: italic;
 }
-section#learning .container .card-container .card .top-card .in-progress {
+section#learning .container .card-container .card .card-title .in-progress {
   color: rgb(0, 255, 42);
   font-size: 14px;
   font-style: italic;
-}
-section#learning .container .card-container .card .bottom-card {
-  margin-top: 10px;
-  font-size: 20px;
-  color: white;
 }
 
 @media (max-width: 767.98px) {
@@ -415,7 +399,8 @@ section#learning .container .card-container .card .bottom-card {
   }
   section#learning .container .card-container .card {
     width: 270px;
-    height: 210px;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 @media (max-width: 575.98px) {
@@ -438,18 +423,17 @@ section#learning .container .card-container .card .bottom-card {
   section#learning .container .card-container .card {
     height: -moz-max-content;
     height: max-content;
-    width: 210px;
-    padding: 10px;
+    width: 160px;
     margin: 10px 5px;
   }
-  section#learning .container .card-container .card .top-card img {
+  section#learning .container .card-container .card .card-title img {
     height: 35px;
     margin-right: 0;
   }
-  section#learning .container .card-container .card .top-card p {
+  section#learning .container .card-container .card .card-title p {
     font-size: 16px;
   }
-  section#learning .container .card-container .card .bottom-card {
+  section#learning .container .card-container .card .card-title p:last-child {
     display: none;
   }
 }

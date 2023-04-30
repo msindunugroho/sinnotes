@@ -34,45 +34,6 @@ nav {
         font-size: 35px;
       }
     }
-    .theme-switcher {
-      width: max-content;
-      height: 40px;
-      margin-left: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .container-switcher {
-        width: 40px;
-        height: max-content;
-        border-radius: 20px;
-        padding: 1px;
-        border: 1px solid white;
-
-        .switcher {
-          width: 18px;
-          height: 18px;
-          border-radius: 20px;
-          background-color: white;
-          margin-left: 0px;
-          transition: .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-      }
-      .container-icon-theme {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5px;
-
-        span {
-          font-size: 35px;
-          font-weight: 500;
-          color: orange;
-        }
-      }
-    }
   }
 
 
@@ -86,6 +47,11 @@ nav {
       margin-bottom: 5px;
       border-radius: 5px 0 0 5px;
       overflow: hidden;
+
+      &.home {
+        font-weight: 700;
+        font-size: 18px;
+      }
 
       &.first {
         transition: .3s cubic-bezier(0.2, 0.99, 0.58, 0.98);
